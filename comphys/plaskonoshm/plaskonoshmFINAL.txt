@@ -1,0 +1,21 @@
+Username: plaskonoshm
+
+Prob 1: All is correct except for your answer about a4.  Yes, the coefficient
+is positive, but the error is such that the increase is not significant.
+
+Program compilation:      10/10
+Code effort:              75/80
+Syntax & Style:           10/10
+                         =======
+                          95/100
+
+Prob 2: Wow!  You got the right answer!  First one so far!  I like your code!
+Excellent!
+
+                         100/100
+
+Prob 3: Your code looks great!
+
+                         100/100
+295/300 = 98.3%
+===============================================================================

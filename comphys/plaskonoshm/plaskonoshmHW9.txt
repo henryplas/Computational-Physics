@@ -1,0 +1,42 @@
+Username: plaskonoshm
+
+Prob 8.6: Program runs and gives values that are close, but not close enough.
+Your power series expansion is correct as far as it goes, but you need to take
+it out at least to x^4, instead of just x^3, just for accuracy.  Note that
+if you take it out only to x^3, the derivative is just to x^2.
+
+Program compilation:     10/10
+Code effort:             65/80
+Syntax & Style:          10/10
+                        ======
+                         85/100
+
+Prob 8.7: Your program runs and produces results that are nearly correct, but
+not close enough.  In addition, you do not interpolate to find the surface.
+The problem in your code is the first term y2der:  -1/3 = 0, because as you
+wrote it, the program will carry out integer arithmetic.  Replacing by
+-1.0/3.0 & recompiling, your code now gives correct figures, but again, does
+not interpolate.
+
+Program compilation:     10/10
+Code effort:             62/80
+Syntax & Style:          10/10
+                        ======
+                         82/100
+
+Prob 8.8: Looks good!   100/100
+
+Prob 9.1: Looks good!   100/100
+
+Prob 9.3: Looks good!    100/100
+
+Prob 9.4: Your program gives correct values for the coefficients, but not the
+errors.  The problem is that the A[v][v] values should be in the square root.
+
+Program compilation:     10/10
+Code effort:             65/80
+Syntax & Style:          10/10
+                        ======
+                         85/100
+
+===============================================================================

@@ -1,0 +1,43 @@
+Username: plaskonoshm
+
+Prob 1: Output is correct, except that your calculation (at least for my
+inputs) ends above the ground (y = 39.0) instead of when you get to a negative
+value.  Congratulations that you did check to see if the initial y position 
+is negative, and reprompt the user until s/he enters a positive value (!).  
+Good job.  However, you did not close your output file.  
+
+Program compilation:      10/10
+Code effort:              70/80
+Syntax & Style:           10/10
+                        ========
+                          90/100
+
+Prob 2: The program produces the correct plot.  Note
+that since it is guaranteed that all the data files would have the same
+number of lines, you could have used a single while loop to read in the
+data.  In addition, there is a serious problem with your code: the data 
+files contain 101 points, but you allocate space for only 100 points, so 
+you are actually writing data beyond the allocated space.  This can produce 
+serious memory problems, and indeed the program ends in a segmentation fault.  
+If that overwritten memory had been in a more dangerous location, the program 
+would not have run and could even have crashed the computer.
+
+Program compilation:      10/10
+Code effort:              65/80
+Syntax & Style:            7/10
+                        ========
+                          82/100
+
+Prob 3: The program runs and produces a reasonable result.  Problems with
+the code: 1) You do not initialize ran1 in main.  2) You do not initialize
+the counter N to 0, and so if there is some crap in that location in 
+memory, you will get an invalid result.
+
+Program compilation:      10/10
+Code effort:              72/80
+Syntax & Style:            9/10
+                        ========
+                          91/100
+
+263/300 = 87.7%
+===============================================================================

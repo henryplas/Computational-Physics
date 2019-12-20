@@ -1,0 +1,38 @@
+Username: plaskonoshm
+
+Prob 1: Your code runs but seems to be stuck in an infinite loop.  So, you do
+everything in your "walk" function.  I wanted you to write a walk function that
+would return the position after a single 100-step random walk.  But you carry
+out the 100000 random walks within walk itself.  Looking at that function,
+the problem is that you use x, the position after the 100-step random walk as
+the index for bin.  It is entirely possible that x could exceed 80 in which case
+you would be writing to memory not allocated.  That would give a segmentation
+fault, or cause your program to hang.
+
+Program compilation:      10/10
+Code effort:              52/80
+Syntax & Style:           10/10
+                        ========
+Total:                    72/100
+
+Prob 2: Your code runs and outputs the correct results.  The code looks fine
+except that line 61 is a stray, and is left over from the key.  However, it
+did no harm!!
+
+                         100/100
+
+Prob 3: The program did not compile and returned with 3 errors.  These arise
+from a single extra parentheses on line 81.  Correcting that and recompiling,
+your program now produces correct coefficients but the errors are incorrect.
+Your chi2 value is incorrect.  The reason for this is that you are not
+summing over all the data values but only i = 1 to m.  So your chi2 is much
+too small.
+
+Program compilation:      10/10
+Code effort:              70/80
+Syntax & Style:           10/10
+                        ========
+                          90/100
+
+262/300 = 87.3%
+===============================================================================

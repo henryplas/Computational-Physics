@@ -1,0 +1,57 @@
+Username: plaskonoshm
+
+Prob 7.11: program runs and gives correct answers.  Because your area of
+integration is a rectangle, and you are generating random points to fall inside
+that rectangle, you don't actually have to test whether they fall inside.  So
+that part of the code can be removed.
+
+                         96/100
+
+Prob 7.12: The program prints out correct values for X and Y, but no errors.
+It does not print out a value for M.  Some comments on the code: 1) You are
+taking the entire rectangle as V, so V should be 2, not 1.  2) You do 
+calculate M but don't print it out.  3) No errors are calculated.
+
+Program compilation:     10/10
+Code effort:             63/80
+Syntax & Style:          10/10
+                        ======
+                         83/100
+
+Prob 7.14: Your program runs and outputs reasonable results, although my
+program goes to lower energies (-94) than yours and does it more quickly.
+You need to initialize energy "e" to 0 in the energy function.  Otherwise
+your code looks reasonable.
+
+                         92/100
+
+Prob 8.2: Does not prompt the user for a step size, but uses dx = 0.0000001; !
+I am too impatient to wait for it to stop, so I edited your code to make
+dx = 0.1 and recompiled. It then produces the expected result.
+
+Program compilation:     10/10
+Code effort:             70/80 <- need for recompilation
+Syntax & Style:          10/10
+                        ======
+                         90/100
+
+Prob 8.3: Looks good!   100/100
+
+Prob 8.4: Hmm, the program runs and gets to x = 1.0, but the step sizes are
+too big and the final result is not at all accurate (should be 0.666666).
+Problems with the code: 1) You set initial dx = 0.1, but then for the double
+step you use dx = 0.1, and for the single step 0.05.  It should have been
+0.2 and 0.1.  2) Since your single step is 0.05, your step size adjustment
+(next statement) is not correct, as that is for the correct single step of
+0.1.  Note: this code looks awfully like that of dornja.
+
+Program compilation:     10/10
+Code effort:             63/80
+Syntax & Style:          10/10
+                        ======
+                         83/100
+
+Prob 8.5: Not turned in   0/100
+   
+544/700 = 77.7%
+===============================================================================

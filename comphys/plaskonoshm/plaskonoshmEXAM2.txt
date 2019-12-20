@@ -1,0 +1,39 @@
+Username: plaskonoshm
+
+Prob 1: The program runs and outputs correct results.  However, you do not
+reprompt if the user enters numbers which are outside of the limits.  Please
+also pay attention to indentation so that your indentation is consistent.
+Otherwise, your program looks fine.
+
+Program compilation:      10/10
+Code effort:              73/80
+Syntax & Style:            9/10
+                         =======
+Total:                    92/100
+
+Prob 2: The program runs and outputs correct results.  However, you do
+use a and b before they are initialized.  In addition, your brackets are
+pretty large (0 and 100).  By examining the function using gnuplot you could
+have reduced that upper limit by quite a bit.
+
+Program compilation:      10/10
+Code effort:              68/80
+Syntax & Style:            9/10
+                         ======= 
+                          87/100
+
+Prob 3: You get the big oscillation nearly correct, but not the small
+oscillation.  That is because you used the same amplitude and period for
+the two oscillations.  The problem with that is that powell is not able to
+choose which one to fit to the big oscillation and which to fit to the small.
+It just tries to fit both to the big.  So, you should have used quite
+different values for A2 and P2.
+
+Program compilation:      10/10
+Code effort:              62/80
+Syntax & Style:           10/10
+                         =======
+                          82/100
+
+261/300 = 87.0%
+===============================================================================

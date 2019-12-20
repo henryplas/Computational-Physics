@@ -1,0 +1,48 @@
+Username: plaskonoshm
+
+Prob 4.2: Program runs and gives correct answers.  The code does not give
+the user a range of wavelengths to enter, nor does it check to see if the
+value entered is between 3511 and 23254 A.  Apart from that, the code is ok.
+
+                         88/100
+
+Prob 4.3: Program runs and gives correct answers.  Your data vectors run
+from 0 to 78, which is fine, but note that your for loop:
+
+	for(i = 0 ; i < 79 ; i++) 
+	{
+		if(pressureArray[i] < pressure && pressureArray[i + 1] >= pressure)
+
+could potentially access pressureArray[79], which does not exist. As a 
+matter of fact, this will not happen, as the user would have to supply 
+P > 2150, but it is not a good idea to have code with a potential memory 
+problem like that.
+
+Program compilation:     10/10
+Code effort:             74/80
+Syntax & Style:           8/10
+                        ======
+                         92/100 
+
+Prob 4.4: Your program runs and gives very nearly the correct answers.  I
+think the main reason for the discrepancy is your inaccurate value for pi:
+const double pi = 3.14159; the code otherwise looks ok.
+
+                         96/100
+
+Prob 4.5: Program runs and gives correct answers.  The code does not give
+the user a range of wavelengths to enter, nor does it check to see if the
+value entered is between 3511 and 23254 A.  Apart from that, the code is ok.
+(Same comment as 4.2).
+
+                         88/100
+
+Prob 4.8: Your program runs, and gives the right answers.  Some problems
+with the code: 1) Again, please remember to prompt the user with the range
+of valid values, 2) The problem stipulated that you should prompt the
+user for Ne, not logNe.  Otherwise the code looks ok.
+
+                         86/100
+
+450/500 = 90.0%
+===============================================================================

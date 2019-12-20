@@ -1,0 +1,39 @@
+Username: plaskonoshm
+
+Prob 6.5: runs correctly. Looks good!
+
+                         100/100
+
+Prob 6.6: Looks good!
+
+                         100/100
+
+Prob 6.8: Graph should be linear!  Note: the code looks basically ok, but
+you are plotting the wavelength of the peak against T, whereas it should be
+against 1/T (see Wien's law).  If you did the latter, you would get a linear
+relationship instead of the 1/x relationship displayed in your graph.
+
+Program compilation:     10/10
+Code effort:             62/80
+Syntax & Style:          10/10
+                        ======
+Total:                   82/100
+
+Prob 6.9: The program runs and produces correct results.  Code looks good.
+
+                         100/100
+
+Prob 6.10: The program runs and produces reasonable results.  Code looks good.
+
+                         100/100
+
+Prob 6.11: runs correctly with good results.  Code looks good.
+
+                        100/100
+
+
+Prob 6.12: The program runs and produces reasonable results.  Code looks good.
+
+                         100/100
+
+===============================================================================

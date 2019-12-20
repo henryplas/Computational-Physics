@@ -1,0 +1,127 @@
+Username: plaskonoshm
+
+Prob 2.5:  Program compiles and gives correct answers.  Code looks good, except
+what is:
+double pi = 2 + sqrt(2);
+not only wrong (although close!), but not used in the code.  Also, you need
+to have comments, if only a short comment at the top.
+
+                    100/100
+
+Prob 2.6 (Grad problem): My compiler gives an error:
+error: ‘for’ loop initial declarations are only allowed in C99 mode
+   for(int i = 0; i < 5; i++
+
+Remember, variables should only be declared at the top of the function, not
+in the code.  This is a good example of why that rule is important.  Some
+languages allow this, by C, without special flags will not.  Note: this code
+may have compiled properly on your own machine.  If you have a Mac or a
+non-Ubuntu/Mint distribution of linux, compile your programs on the 
+computational physics server to avoid this.
+
+I have edited your code to get past this error, and then recompiled.  It now
+runs without errors, but the output is wrong.  The problem is that your
+loop should have been:
+
+for(i = 0; i < 5; i++)
+    {
+        printf("x(%d) = %lf  y(%d) = %lf pi(%d) = %17.15lf\n",i,x,i,y,i,pi);
+        x = 0.5 * (sqrt(x) + (1/(sqrt(x))));
+        
+        if (q >= 1) {
+            y = ((y * sqrt(x)) + (1/sqrt(x))) / (y + 1);
+            pi *= (x + 1)/(y + 1);
+        }
+        q++;   
+      
+    }
+
+Program compilation:     10/10
+Code effort:             70/80
+Syntax & Style:          10/10
+                        ======
+                         90/100
+
+Prob 2.8: Program compiles and runs.  However, the poor user does not know
+the range of numbers over which to guess.  Let him/her know!
+
+                         95/100
+
+Prob 2.9: When I try to compile your code on mine computer I get the
+following error:
+plaskonoshm_ex29--09-08-15:48.c: In function ‘main’:
+plaskonoshm_ex29--09-08-15:48.c:27:5: error: ‘for’ loop initial declarations are only allowed in C99 mode
+     for (int i = 0; i < 1000; i++)
+     ^
+
+The error here is that it is not allowed to declare a variable (in this case
+"i") inside a for loop.  Please declare all variables at the top of your
+function, as I have emphasized many times in class.
+
+Note that it may be that your code compiled without error on your machine.
+If your laptop is a Mac or is a non-Ubuntu/Mint distribution of linux you may
+get a different result.  To be safe, always compile your code on the
+computational physics server before submitting.
+
+Correcting your code and recompiling, the code now works.  The code looks ok
+otherwise.
+
+Program compilation:     10/10
+Code effort:             75/80
+Syntax & Style:           8/10 
+                        ======
+                         93/100
+
+Prob 2.10: Your code runs and produces nearly correct answers, except for
+the counts in the 1.4-1.5 and 1.5-1.6 bins.   The reason for that is that
+you set up the inequalities such that if a grain size is on a boundary,
+it is placed in the higher rather than the lower bin.  The problem instructed
+you to put in the lower bin.
+
+Program compilation:     10/10
+Code effort:             74/80
+Syntax & Style:          10/10 
+                        ====== 
+                         94/100
+
+Prob 2.11:  The compiler returns an error -- the same dumb error about
+declaring variables inside the for statement.  A number of people are making
+that error -- where do you get it from???
+
+Please also print out both epsilon and S.
+
+Correcting your code, recompiling and running, it is now revealed that you
+ignored points for which e < 4.5553, so only part of the solution is
+calculated.
+
+Program compilation:      8/10
+Code effort:             60/80
+Syntax & Style:           8/10 
+                        ======
+                         76/100
+
+
+Prob 2.13: Grrrrh!!!  Same error again!!!  Correcting and recompiling, it
+now runs, however, it only produces 788 points instead of 1000.  You should
+use a while loop instead of a for loop and keep going until you have 1000 pts.
+ 
+Program compilation:      8/10
+Code effort:             65/80
+Syntax & Style:           8/10 
+                        ======
+                         81/100
+
+Prob 3.1:  Program compiles and gives correct answers.  Code looks good.
+
+                    100/100
+
+Prob 3.2:  Program compiles and gives correct answers.  Code looks good.
+
+                    100/100
+
+Prob 3.3:  Program compiles and gives correct answers.  Code looks good.
+
+                    100/100
+
+929/1000 = 92.9%
+===============================================================================

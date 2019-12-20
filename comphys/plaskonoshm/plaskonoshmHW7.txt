@@ -1,0 +1,44 @@
+Username: plaskonoshm
+
+Prob 7.1: Looks good:        100/100
+
+Prob 7.2:                    100/100
+
+Prob 7.3: Your program does not remind the user that the number of points must
+be odd.  I entered 10, it accepted that, and the result was incorrect.  Entering
+11, the program gives the right answer.
+
+                              94/100
+
+Prob 7.4:                    100/100
+
+Prob 7.5: Looks good.        100/100
+
+Prob 7.6: Ok, looks good.  Note: 1.3333333333 = (4.0/3.0) (fewer keystrokes!).
+Also, if you are using a fairly high exponent, it is "okay" to use pow,
+so pow(lambda,5) is ok to use instead of lambda * lambda * lambda * lambda * lambda.  You have to draw the line someplace!
+
+                             100/100
+
+Prob 7.7: Good               100/100
+
+Prob 7.8: Good!              100/100
+
+Prob 7.9:                    100/100
+
+Prob 7.10: The program compiles, but gives wrong answers.  A few comments on
+the code: 1) No need to make check external.  2) Your definition for "r" is
+wrong.  You give:
+
+r = sqrt(x_co*x_co + y_co*y_co);
+it should be:
+r = sqrt((x_co-x)*(x_co-x) + (y_co-y)*(y_co-y));
+
+Program compilation:     10/10
+Code effort:             63/80
+Syntax & Style:          10/10
+                        ======
+Total:                   83/100
+
+977/100 = 97.7%
+===============================================================================

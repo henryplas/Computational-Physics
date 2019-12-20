@@ -1,0 +1,61 @@
+Username: plaskonoshm
+
+Prob 3.4: Program runs, but does not stop.  Infinite loop?  Looks like the
+problem comes from:
+
+int main(int argc, char const *argv[])
+
+argv cannot be declared const, because then it cannot be modified.  Removing
+the const, it still does not run.  2) You left out a print statement in
+if (argc != 2) 
+        {
+            ("\nEnter the tolerance (scientific notation, e.g. 1.5e-13) > ");
+            ni = scanf("%le",&tolerance);
+        }
+so the user is never prompted.  Adding that print statement,
+the program now works and gives correct answers.
+
+Program compilation:     10/10
+Code effort:             60/80  doesn't run after compilation.
+Syntax & Style:           6/10  const for argv, no printf
+                        ======
+                         76/100
+
+Prob 3.5: Looks good.
+
+                        100/100
+
+
+Prob 3.7: Looks good.
+
+                        100/100
+
+Prob 3.8: Not certain why you are using a while loop (beginning line 54)?
+In addition, the stop condition:
+wave[j] != 0.0
+is dangerous because you are relying on an uninitiated space in memory to be
+0, whereas it may not be.
+
+Program compilation:     10/10
+Code effort:             65/80 
+Syntax & Style:           8/10
+                        ======
+                         83/100
+
+Prob 3.9: Your calculations for the Eemian and Illinoian are not correct.
+Not certain why you initialized m and n to 1.  You should cast like:
+sum0/(double)m    and
+sum1/(double)n
+
+because it is only m and n that are integers.  Casting the quantities
+sum0/m sum1/n doesn't do any good because the mathematics has already been
+done before the cast.
+
+Program compilation:     10/10
+Code effort:             72/80 
+Syntax & Style:           7/10
+                        ======
+                         89/100
+
+448/500 = 89.6%
+===============================================================================

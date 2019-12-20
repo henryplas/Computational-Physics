@@ -1,0 +1,49 @@
+Username: plaskonoshm
+
+Prob 5.1: Your stop condition uses a and b, which are also altered in the
+while loop.  You should capture the original values of a and b, and use those
+original values in the stop condition, as discussed in class.
+
+                        90/100
+
+Prob 5.2:  Code is ok, but no need to have two while loops.  Put one 
+while loop into a for loop (see key).  Less code is better.
+
+                         93/100
+
+Prob 5.3: Code looks ok.
+
+                        100/100
+
+Prob 5.4: So, I wanted you to write a function that would do the interpolation.
+Instead you have done everything in main.
+
+Program compilation:     10/10
+Code effort:             65/80
+Syntax & Style:          10/10
+                        ======
+Total:                   85/100
+
+Prob 5.7:  Good         100/100
+
+Prob 5.8: Looks good    100/100
+
+Prob 5.9: You could have done this with a single while loop inside a for loop.
+See key.  Saves on repeating code unnecessarily.
+
+                         93/100
+
+Prob 6.1: Your code takes a very long time to complete (lots of steps to
+final convergence), and the problem is the same as in Prob 5.1.
+
+                         90/100
+
+Prob 6.3: Good.         100/100
+
+Prob 6.4: runs, but gives the wrong answer.  I don't understand -- this one
+also has the bessel function in it.  Not enough time to complete it??
+
+                         40/100
+
+891/1000 = 89.1%
+===============================================================================
